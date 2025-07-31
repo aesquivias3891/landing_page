@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriKitchen - Comida Saludable a Domicilio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>NutriKitchen</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#menu" class="nav-link">Menú</a>
+                    <a href="#planes" class="nav-link">Planes</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+                <div class="nav-cta">
+                    <button class="btn-primary">Ordenar Ahora</button>
+                </div>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Comida Saludable <span class="text-gradient">Deliciosa</span> en tu Puerta
+                </h1>
+                <p class="hero-description">
+                    Disfruta de comidas nutritivas y sabrosas preparadas con ingredientes frescos. 
+                    Menús semanales personalizados para desayunos y almuerzos.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large">Ver Menú Semanal</button>
+                    <button class="btn-secondary btn-large">Conoce Nuestros Planes</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Platos Únicos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Entrega Garantizada</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Comida Saludable">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Servicio</h2>
+                <p class="section-description">
+                    Modelo Dark Kitchen que garantiza frescura y calidad en cada entrega
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Menú Semanal</h3>
+                    <p>Platos variados y nutritivos que cambian cada semana para mantener la variedad y el interés.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Entrega Programada</h3>
+                    <p>Recibe tus comidas en el horario que prefieras, con entregas puntuales y confiables.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Ingredientes Frescos</h3>
+                    <p>Utilizamos solo ingredientes frescos y de la más alta calidad, sin conservantes artificiales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Saludable y Delicioso</h3>
+                    <p>Equilibrio perfecto entre nutrición y sabor, diseñado por expertos en nutrición.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Menú de Esta Semana</h2>
+                <p class="section-description">
+                    Descubre nuestras opciones de desayunos y almuerzos para esta semana
+                </p>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="desayunos">Desayunos</button>
+                <button class="menu-tab" data-tab="almuerzos">Almuerzos</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-grid active" id="desayunos">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bowl de Açaí">
+                        <div class="menu-item-content">
+                            <h3>Bowl de Açaí con Granola</h3>
+                            <p>Açaí, granola casera, frutas frescas y miel orgánica</p>
+                            <span class="menu-price">$12.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tostadas de Aguacate">
+                        <div class="menu-item-content">
+                            <h3>Tostadas de Aguacate</h3>
+                            <p>Pan integral, aguacate, huevos orgánicos y semillas</p>
+                            <span class="menu-price">$10.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smoothie Verde">
+                        <div class="menu-item-content">
+                            <h3>Smoothie Verde Energético</h3>
+                            <p>Espinaca, plátano, manzana y proteína vegetal</p>
+                            <span class="menu-price">$8.50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-grid" id="almuerzos">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ensalada César">
+                        <div class="menu-item-content">
+                            <h3>Ensalada César Saludable</h3>
+                            <p>Lechuga romana, pollo a la plancha, crutones integrales</p>
+                            <span class="menu-price">$15.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bowl de Quinoa">
+                        <div class="menu-item-content">
+                            <h3>Bowl de Quinoa Mediterráneo</h3>
+                            <p>Quinoa, vegetales asados, garbanzos y tahini</p>
+                            <span class="menu-price">$16.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Salmón a la Plancha">
+                        <div class="menu-item-content">
+                            <h3>Salmón a la Plancha</h3>
+                            <p>Salmón salvaje, vegetales al vapor y arroz integral</p>
+                            <span class="menu-price">$22.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes Section -->
+    <section id="planes" class="plans">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planes Semanales</h2>
+                <p class="section-description">
+                    Elige el plan que mejor se adapte a tu estilo de vida
+                </p>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Básico</h3>
+                        <div class="plan-price">
+                            <span class="price">$89</span>
+                            <span class="period">/semana</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 5 comidas a la semana</li>
+                        <li><i class="fas fa-check"></i> Menú de almuerzos</li>
+                        <li><i class="fas fa-check"></i> Entrega programada</li>
+                        <li><i class="fas fa-check"></i> Ingredientes frescos</li>
+                    </ul>
+                    <button class="btn-primary btn-full">Elegir Plan</button>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-badge">Más Popular</div>
+                    <div class="plan-header">
+                        <h3>Plan Completo</h3>
+                        <div class="plan-price">
+                            <span class="price">$129</span>
+                            <span class="period">/semana</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 5 desayunos + 5 almuerzos</li>
+                        <li><i class="fas fa-check"></i> Menú personalizado</li>
+                        <li><i class="fas fa-check"></i> Entrega diaria</li>
+                        <li><i class="fas fa-check"></i> Soporte nutricional</li>
+                        <li><i class="fas fa-check"></i> Descuento por pago adelantado</li>
+                    </ul>
+                    <button class="btn-primary btn-full">Elegir Plan</button>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Premium</h3>
+                        <div class="plan-price">
+                            <span class="price">$199</span>
+                            <span class="period">/semana</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 7 desayunos + 7 almuerzos</li>
+                        <li><i class="fas fa-check"></i> Menú completamente personalizado</li>
+                        <li><i class="fas fa-check"></i> Consulta nutricional incluida</li>
+                        <li><i class="fas fa-check"></i> Entrega express</li>
+                        <li><i class="fas fa-check"></i> Snacks saludables incluidos</li>
+                    </ul>
+                    <button class="btn-primary btn-full">Elegir Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Increíble servicio. Las comidas son deliciosas y me han ayudado a mantener una dieta saludable sin esfuerzo."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="María García">
+                        <div>
+                            <h4>María García</h4>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"La calidad de los ingredientes es excepcional. Me encanta que puedo programar mis entregas según mi horario."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Carlos Rodríguez">
+                        <div>
+                            <h4>Carlos Rodríguez</h4>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Perfecto para mi estilo de vida ocupado. Comida saludable y deliciosa que llega a tiempo siempre."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Ana López">
+                        <div>
+                            <h4>Ana López</h4>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Listo para empezar?</h2>
+                    <p>Únete a cientos de personas que ya disfrutan de comida saludable y deliciosa en la comodidad de su hogar.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hola@nutrikitchen.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ciudad de México, México</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="plan" name="plan" required>
+                                <option value="">Selecciona un plan</option>
+                                <option value="basico">Plan Básico</option>
+                                <option value="completo">Plan Completo</option>
+                                <option value="premium">Plan Premium</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje adicional (opcional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Solicitar Información</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>NutriKitchen</span>
+                    </div>
+                    <p>Comida saludable y deliciosa preparada con ingredientes frescos y entregada a tu puerta.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#menu">Menú Semanal</a></li>
+                        <li><a href="#planes">Planes</a></li>
+                        <li><a href="#servicios">Dark Kitchen</a></li>
+                        <li><a href="#contacto">Entrega a Domicilio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Nuestro Equipo</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> hola@nutrikitchen.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NutriKitchen. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <!-- Botón flotante del chatbot -->
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+            <span class="chatbot-notification" id="chatbotNotification">1</span>
+        </div>
+        
+        <!-- Ventana del chatbot -->
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div>
+                        <h4>NutriKitchen Asistente</h4>
+                        <span class="chatbot-status">En línea</span>
+                    </div>
+                </div>
+                <div class="chatbot-controls">
+                    <button class="chatbot-minimize" id="chatbotMinimize">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button class="chatbot-close" id="chatbotClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <!-- Los mensajes se agregarán dinámicamente -->
+            </div>
+            
+            <div class="chatbot-input-container">
+                <div class="chatbot-quick-actions" id="chatbotQuickActions">
+                    <button class="quick-action-btn" data-action="menu">Ver Menú</button>
+                    <button class="quick-action-btn" data-action="plans">Planes</button>
+                    <button class="quick-action-btn" data-action="order">Hacer Pedido</button>
+                    <button class="quick-action-btn" data-action="support">Soporte</button>
+                </div>
+                <div class="chatbot-input-wrapper">
+                    <input type="text" id="chatbotInput" placeholder="Escribe tu mensaje..." maxlength="500">
+                    <button class="chatbot-send" id="chatbotSend">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
